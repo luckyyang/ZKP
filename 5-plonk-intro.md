@@ -251,7 +251,7 @@ proof = prover.prove(assignments)
 ```
 
 
-### Round 1: 生成对 witness/assignments 多项式的承诺
+### Round 1: 生成对 witness 多项式的承诺
 这个过程和相关知识可以参考 [理解 PLONK（一）：Plonkish Arithmetization
 ](https://github.com/sec-bit/learning-zkp/blob/develop/plonk-intro-cn/plonk-arithmetization.md) 和 [理解 PLONK（二）：多项式编码
 ](https://github.com/sec-bit/learning-zkp/blob/develop/plonk-intro-cn/plonk-lagrange-basis.md)。多项式承诺相关知识可以参考 [理解 Plonk（五）：多项式承诺
