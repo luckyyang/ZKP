@@ -41,13 +41,13 @@ def verifier_test(setup, proof, group_order):
 ```
 
 整个协议的过程：
-1. 给定一个计算/电路/程序:
+1. 给定一个计算/电路/程序，例如:
 ```
 a * b = c
 c * d = e
 其中 e 是公开值
 ```
-2. prover 选择特定的一组值 witness = (a, b, c, d, e)，这组值满足上面的约束条件
+2. prover 选择特定的一组保密值 witness = (a, b, c, d, e)，这组值满足上面的约束条件
 3. 在保持 witness 不公开的前提下，prover 生成一个证明 proof, 可以证明 prover 知道 witness
 4. verifier 验证 proof 的真实性
 
@@ -191,7 +191,7 @@ verifier 得到 verification key，在上面的 `Setup` 步骤中也提到了。
 assignments = {"a": 3, "b": 4, "c": 12, "d": 5, "e": 60}
 ```
 
-Assignment 是对电路中引线的赋值。这些值只有 prover 知道，对 verifier 是保密的，这些值也叫 witness 或者 private input。prover 最终要向 verifier 提供证明，保证将这些值输入到 program 中能得到指定的结果。
+Assignment 是对电路中引线的赋值。有些值只有 prover 知道，对 verifier 是保密的，这些值也叫 witness 或者 private input。prover 最终要向 verifier 提供证明，保证将这些值输入到 program 中能得到指定的结果。
 
 ## Generate proof
 ```python
