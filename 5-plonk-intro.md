@@ -6,11 +6,11 @@
 
 ## 流程
 通过测试 `test.py` 看到验证 Plonk 协议主要分为以下几个部分：
-- Setup
-- Program
-- Assignment
-- Generate proof
-- Verify
+- [Setup](#setup)
+- [Program](#program)
+- [Assignment](#assignment)
+- [Generate proof](#generate-proof)
+- [Verify](#verify)
 
 ```python=
 def prover_test():
